@@ -12,6 +12,7 @@
     
   </head>
 
+    
   <body>
     <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
       <tr style="padding:0px">
@@ -51,55 +52,65 @@
 
 
 
-    <tr onmouseout="smerf_stop()" onmouseover="smerf_start()">
+
+              
+
+    <tr onmouseout="LM_stop()" onmouseover="LM_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='smerf_image'><video  width=100% muted autoplay loop>
-          <source src="images/smerf.mp4" type="video/mp4">
+          <div class="two" id='LM_image'><video  width=100% muted autoplay loop>
+          <source src="images/LM.mp4" type="video/mp4">
           Your browser does not support the video tag.
           </video></div>
-          <img src='images/smerf.jpg' width=100%>
+          <img src='images/LM.png' width=100%>
         </div>
         <script type="text/javascript">
           function smerf_start() {
-            document.getElementById('smerf_image').style.opacity = "1";
+            document.getElementById('LM_image').style.opacity = "1";
           }
 
           function smerf_stop() {
-            document.getElementById('smerf_image').style.opacity = "0";
+            document.getElementById('LM_image').style.opacity = "0";
           }
           smerf_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://smerf-3d.github.io/">
-          <span class="papertitle">SMERF: Streamable Memory Efficient Radiance Fields for Real-Time Large-Scene Exploration</span>
+        <a href="https://sites.google.com/view/laughing-matters/">
+          <span class="papertitle">Laughing Matters: Introducing Laughing-Face Generation using Diffusion Models</span>
         </a>
         <br>
-		<a href="http://www.stronglyconvex.com/about.html">Daniel Duckworth*</a>,
-		<a href="https://phogzone.com/">Peter Hedman*</a>,
-		<a href="https://creiser.github.io/">Christian Reiser</a>,
+          								
+		<a href="">Antoni Bigata Casademunt</a>,
+		<a href="">Rodrigo Mira</a>,
+          <strong>Nikita Drobyshev</strong>,
+		<a href="">Konstantinos Vougioukas</a>,
 		<a href="">Peter Zhizhin</a>,
 		<a href="">Jean-François Thibert</a>,
-        <a href="https://lucic.ai/">Mario Lučić</a>,
-        <a href="https://szeliski.org/">Richard Szeliski</a>,
-		<strong>Jonathan T. Barron</strong>
+        <a href="">Stavros Petridis</a>,
+        <a href="">Maja Pantic</a>,
+		
         <br>
-        <em>arXiv</em>, 2023
+        <em>BMVC</em>, 2023
         <br>
-        <a href="https://smerf-3d.github.io/">project page</a>
+        <a href="https://sites.google.com/view/laughing-matters/">project page</a>
         /
-        <a href="https://www.youtube.com/watch?v=zhO8iUBpnCc">video</a>
+        <a href="https://www.youtube.com/watch?v=TuyIp3b4_Jo">video</a>
         /
-        <a href="https://arxiv.org/abs/2312.07541">arXiv</a>
+        <a href="https://arxiv.org/abs/2305.08854">arXiv</a>
         <p></p>
         <p>
-        Distilling a Zip-NeRF into a tiled set of MERFs lets you fly through radiance fields on laptops and smartphones at 60 FPS.
+        Model that creates realistic laughter animations from a still image and laughter audio, using advanced diffusion models.
         </p>
       </td>
     </tr>
 	
 
+
+
+
+
+              
     <tr onmouseout="nuvo_stop()" onmouseover="nuvo_start()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -145,6 +156,11 @@
       </td>
     </tr>
 
+
+
+
+
+              
   <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
     <td style="padding:20px;width:25%;vertical-align:middle">
       <div class="one">
@@ -191,7 +207,11 @@
     </td>
   </tr>
 	
-	
+
+
+
+
+              
     <tr onmouseout="recon_stop()" onmouseover="recon_stopt()" bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
@@ -241,6 +261,9 @@
       </td>
     </tr>
 
+
+
+              
     <tr onmouseout="mip360_stop()" onmouseover="mip360_start()"  bgcolor="#ffffd0">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
