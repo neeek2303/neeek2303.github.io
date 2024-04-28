@@ -197,24 +197,24 @@
 
 
               
-  <tr onmouseout="eclipse_stop()" onmouseover="eclipse_start()">
+  <tr onmouseout="UDSR_stop()" onmouseover="UDSR_start()">
     <td style="padding:20px;width:25%;vertical-align:middle">
       <div class="one">
-        <div class="two" id='eclipse_image'><video  width=100% height=100% muted autoplay loop>
+        <div class="two" id='UDSR_image'><video  width=100% height=100% muted autoplay loop>
         <source src="images/UDSR_W.png" type="video/mp4">
         Your browser does not support the video tag.
         </video></div>
         <img src='images/UDSR_W.png' width="160">
       </div>
       <script type="text/javascript">
-        function eclipse_start() {
-          document.getElementById('eclipse_image').style.opacity = "1";
+        function UDSR_start() {
+          document.getElementById('UDSR_image').style.opacity = "1";
         }
 
-        function eclipse_stop() {
-          document.getElementById('eclipse_image').style.opacity = "0";
+        function UDSR_stop() {
+          document.getElementById('UDSR_image').style.opacity = "0";
         }
-        eclipse_stop()
+        UDSR_stop()
       </script>
     </td>
     <td style="padding:20px;width:75%;vertical-align:middle">
@@ -245,51 +245,48 @@
 
 
               
-    <tr onmouseout="recon_stop()" onmouseover="recon_stopt()">
+    <tr onmouseout="brain_stop()" onmouseover="brain_stopt()">
       <td style="padding:20px;width:25%;vertical-align:middle">
         <div class="one">
-          <div class="two" id='recon_image'><video  width=100% height=100% muted autoplay loop>
-          <source src="images/recon.mp4" type="video/mp4">
+          <div class="two" id='brain_image'><video  width=100% height=100% muted autoplay loop>
+          <source src="images/brain.png" type="video/mp4">
           Your browser does not support the video tag.
           </video></div>
-          <img src='images/recon.png' width="160">
+          <img src='images/brain.png' width="160">
         </div>
         <script type="text/javascript">
-          function recon_start() {
-            document.getElementById('recon_image').style.opacity = "1";
+          function brain_start() {
+            document.getElementById('brain_image').style.opacity = "1";
           }
 
-          function recon_stop() {
-            document.getElementById('recon_image').style.opacity = "0";
+          function brain_stop() {
+            document.getElementById('brain_image').style.opacity = "0";
           }
-          recon_stop()
+          brain_stop()
         </script>
       </td>
       <td style="padding:20px;width:75%;vertical-align:middle">
-        <a href="https://reconfusion.github.io/">
-			<span class="papertitle">ReconFusion: 3D Reconstruction with Diffusion Priors</span>
+        <a href="https://arxiv.org/abs/2105.12038">
+			<span class="papertitle">Interpretation of 3D CNNs for Brain MRI Data Classification
+</span>
         </a>
+        <br> 
+        <a href="">Maxim Kan</a>,
+		<a href="">Ruslan Aliev</a>,
+        <a href="">Anna Rudenko</a>,
+        <strong>Nikita Drobyshev</strong>
+        <a href="">Nikita Petrashen</a>,
+        <a href="">Ekaterina Kondrateva</a>,
+        <a href="">Maxim Sharaev</a>,
+        <a href="">Alexander Bernstein</a>,
+        <a href="">Evgeny Burnaev</a>,
         <br>
-        <a href="https://www.cs.columbia.edu/~rundi/">Rundi Wu*</a>,
-		<a href="https://bmild.github.io/">Ben Mildenhall*</a>,
-        <a href="https://henzler.github.io/">Philipp Henzler</a>,
-        <a href="https://keunhong.com/">Keunhong Park</a>,
-        <a href="https://ruiqigao.github.io/">Ruiqi Gao</a>,
-        <a href="https://scholar.google.com/citations?user=_pKKv2QAAAAJ&hl=en/">Daniel Watson</a>,
-        <a href="https://pratulsrinivasan.github.io/">Pratul P. Srinivasan</a>,
-        <a href="https://dorverbin.github.io/">Dor Verbin</a>,
-		<strong>Jonathan T. Barron</strong>,
-        <a href="https://poolio.github.io/">Ben Poole</a>,
-        <a href="https://holynski.org/">Aleksander Holynski*</a>
+        <em>AIST</em>, 2020
         <br>
-        <em>CVPR</em>, 2024
-        <br>
-        <a href="https://reconfusion.github.io/">project page</a>
-        /
-        <a href="https://arxiv.org/abs/">arXiv</a>
+        <a href="https://arxiv.org/abs/2105.12038">arXiv</a>
         <p></p>
         <p>
-        Using a multi-image diffusion model as a regularizer lets you recover high-quality radiance fields from just a handful of images.
+        We extend the previous findings in gender differences from diffusion-tensor imaging on T1 brain MRI scans. We provide the voxel-wise 3D CNN interpretation comparing the results of three interpretation methods: Meaningful Perturbations, Grad CAM and Guided Backpropagation, and contribute with the open-source library.
         </p>
       </td>
     </tr>
